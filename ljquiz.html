@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Player Career Stats</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+ 
+</head>
+  <body onload="myFunction()" style="margin:0;" class="ljquizbody">
+
+ <div class="loading">
+   <img class="loader" src="https://cdn.glitch.com/5e06639a-bac0-47f1-9074-62acf4fd475b%2Fload.png?1529178225522">
+  <p>
+    Putting the questions together....
+  </p>
+  </div>
+<form class="quiz animate-bottom" id="quiz2">
+  <label> Where was Lebron born? </label> <br>
+  <input type="radio" name="state" value="Texas"> Texas <br>
+  <input type="radio" name="state" value="Arizona"> Arizona <br>
+  <input type="radio" name="state" value="Ohio"> Ohio <br>
+  <input type="radio" name="state" value="South Carolina"> South Carolina <br>
+
+  
+
+  <label> How tall is Lebron? </label> <br>
+  <input type="radio" name="Height" value="7ft"> 7 feet <br>
+  <input type="radio" name="Height" value="6ft 10in"> 6 feet 10 inches <br>
+  <input type="radio" name="Height" value="6ft 8in"> 6 feet 8 inches <br>
+  <input type="radio" name="Height" value="6ft 5in"> 6 feet 5 inches <br>
+
+  
+
+  <label> Which College did he go to or plan to go? </label> <br>
+  <input type="radio" name="College" value="Ohio state University"> Ohio state University <br>
+  <input type="radio" name="College" value="University of Akron"> University of Akron <br>
+  <input type="radio" name="College" value=""> Kent State University <br>
+  <input type="radio" name="College" value="University of Toledo"> University of Toledo <br>
+
+  
+  <label> James won season MVP, NBA Finals MVP and an Olympic gold medal in the same year. Which other player did the same? </label> <br>
+  <input type="radio" name="Name" value="Larry Bird"> Larry Bird <br>
+  <input type="radio" name="Name" value="Michael Jordan"> Michael Jordan <br>
+  <input type="radio" name="Name" value="Magic Johnson"> Magic Johnson <br>
+  <input type="radio" name="Name" value="James Harden"> James Harden <br>
+  <input class="ljsubmit" type="submit" value="Submit"> <br>
+  
+
+  </form>
+    <a href="index.html"><button class="ljquizbutton"> Go back to first page </button> </a>
+  	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script src="loading.js"></script>
+  <script>
+  $('#quiz2').submit(function() {
+    event.preventDefault()
+    var points = 0;
+    var $inputs = $('#quiz2 :input:radio:checked');
+    var values = {};
+    $inputs.each(function() {
+        values[this.name] = $(this).val();
+    });
+    
+    if(values.state === "Ohio") {
+      points++;
+    }
+    
+    if(values.Height === "6ft 8in") {
+      points++;
+    }
+    
+    if(values.College === "University of Akron") {
+      points++;
+    }
+    if(values.Name === "Michael Jordan") {
+      points++;
+    }
+    
+    $("#quiz2").css('visibility', 'hidden');
+    $(".ljquizbody").prepend("<h2>You got "+points+"/4 right!</h2>");
+    
+  });
+  </script>
+  </body>
+</html>

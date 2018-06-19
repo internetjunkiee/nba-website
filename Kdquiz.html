@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Player Career Stats</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+</head>
+<body onload="myFunction()" style="margin:0;" class="kdquizbody">
+
+ <div class="loading">
+   <img class="loader" src="https://cdn.glitch.com/5e06639a-bac0-47f1-9074-62acf4fd475b%2Fload.png?1529178225522">
+  <p>
+    Putting the questions together....
+  </p>
+  </div>
+  
+	<form class="animate-bottom quiz" id="quiz1" name="quiz1">
+		<label>Where was Kevin Durant born?</label><br>
+		<input name="state" type="radio" value="Washington DC"> Washington DC<br>
+		<input name="state" type="radio" value="Oklahoma"> Oklahoma<br>
+		<input name="state" type="radio" value="Texas"> Texas<br>
+		<input name="state" type="radio" value="California"> California<br>
+    
+    
+		<label>When was Kevin drafted into the Golden State Warriors?</label><br>
+		<input name="Number" type="radio" value="2013"> 2013<br>
+		<input name="Number" type="radio" value="2014"> 2014<br>
+		<input name="Number" type="radio" value="2015"> 2015<br>
+		<input name="Number" type="radio" value="2016"> 2016<br>
+    
+    
+		<label>Which College did he go to?</label><br>
+		<input name="College" type="radio" value="Austin Community College"> Austin Community College<br>
+		<input name="College" type="radio" value="University of Texas">University of Texas<br>
+		<input name="College" type="radio" value="Baylor University"> Baylor University<br>
+		<input name="College" type="radio" value="University of Houston"> University of Houston<br>
+    
+    
+		<label>What's his father's name?</label><br>
+		<input name="Name" type="radio" value="Wayne"> Wayne<br>
+		<input name="Name" type="radio" value="Chris"> Chris<br>
+		<input name="Name" type="radio" value="Andrew"> Andrew<br>
+		<input name="Name" type="radio" value="Matt"> Matt<br>
+		
+    <label>Which game was KD on the cover of?</label><br>
+		<input name="Game" type="radio" value="NBA2K14"> NBA2K14<br>
+		<input name="Game" type="radio" value="NBA2K15"> NBA2K15<br>
+		<input name="Game" type="radio" value="NBA2K16"> NBA2K16<br>
+		<input name="Game" type="radio" value="NBA2K17"> NBA2K17<br>
+		<input class="kdsubmit" type="submit" value="Submit"><br>
+	</form>
+    <a href="index.html"><button class="kdquizbutton"> Go back to first page </button> </a>
+  	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script src="loading.js"></script>
+ <script>
+  
+  
+  $('#quiz1').submit(function() {
+    event.preventDefault()
+    var points = 0;
+    var $inputs = $('#quiz1 :input:radio:checked');
+    var values = {};
+    $inputs.each(function() {
+        values[this.name] = $(this).val();
+    });
+    if(values.state === "Washington DC") {
+      points++;
+    }
+    
+    if(values.Number === "2016") {
+      points++;
+    }
+    if(values.College === "University of Texas") {
+      points++;
+    }
+    if(values.Name === "Wayne") {
+      points++;
+    }
+    if(values.Game === "NBA2K15") {
+      points++;
+    }
+    $("#quiz1").css('visibility', 'hidden');
+    $(".kdquizbody").prepend("<h2>You got "+points+"/5 right!</h2>");
+    
+  });
+
+  
+   //if (value==="Washington DC") {
+   // points += 1;
+//}
+  
+  
+  
+  
+  
+  </script>
+  
+  
+  
+
+
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Player Career Stats</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+ 
+</head>
+  
+  <body onload="myFunction()" style="margin:0;" class="ghquizbody">
+
+ <div class="loading">
+   <img class="loader" src="https://cdn.glitch.com/5e06639a-bac0-47f1-9074-62acf4fd475b%2Fload.png?1529178225522">
+  <p>
+    Putting the questions together....
+  </p>
+  </div>
+<form class="quiz animate-bottom" id="quiz4">
+  <label> Where was Gordon born? </label> <br>
+  <input type="radio" name="state" value="Indiana"> Indiana <br>
+  <input type="radio" name="state" value="Chicago">Chicago <br>
+  <input type="radio" name="state" value="Florida"> Florida<br>
+  <input type="radio" name="state" value="Georgia"> Georgia <br>
+
+  
+
+  <label> When did Gordon get drafted into the Utah jazzes? </label> <br>
+  <input type="radio" name="Number" value="2010"> 2010 <br>
+  <input type="radio" name="Number" value="2011"> 2011 <br>
+  <input type="radio" name="Number" value="2012"> 2012 <br>
+  <input type="radio" name="Number" value="2013"> 2013 <br>
+
+  
+
+  <label> Which College did he go to? </label> <br>
+  <input type="radio" name="College" value="Marian University"> Marian University <br>
+  <input type="radio" name="College" value="Butler University">Butler University <br>
+  <input type="radio" name="College" value="University of Indianapolis"> University of Indianapolis <br>
+  <input type="radio" name="College" value="Ball State University"> Ball State University <br>
+
+  
+  <label> What's his father's name? </label> <br>
+  <input type="radio" name="Name" value="Gordon"> Gordon <br>
+  <input type="radio" name="Name" value="Phil"> Phil <br>
+  <input type="radio" name="Name" value="Sam"> Sam <br>
+  <input type="radio" name="Name" value="Kyle"> Kyle <br>
+  <input class="ghsubmit" type="submit" value="Submit"> <br>      
+  </form>
+    <a href="index.html"><button class="ghquizbutton"> Go back to first page </button> </a>
+  	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script src="loading.js"></script>
+  <script>
+  
+  $('#quiz4').submit(function() {
+    event.preventDefault()
+    var points = 0;
+    var $inputs = $('#quiz4 :input:radio:checked');
+    var values = {};
+    $inputs.each(function() {
+        values[this.name] = $(this).val();
+    });
+    if(values.state === "Indiana") {
+      points++;
+    }
+    
+    if(values.Number === "2010") {
+      points++;
+    }
+    if(values.College === "Butler University") {
+      points++;
+    }
+    if(values.Name === "Gordon") {
+      points++;
+    }
+  
+    $("#quiz4").css('visibility', 'hidden');
+    $(".ghquizbody").prepend("<h2>You got "+points+"/4 right!</h2>");
+    
+  });
+</script>
+  
+  </body>
+</html>

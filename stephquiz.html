@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Player Career Stats</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+ 
+</head>
+<body onload="myFunction()" style="margin:0;" class="stephquizbody">
+
+ <div class="loading">
+   <img class="loader" src="https://cdn.glitch.com/5e06639a-bac0-47f1-9074-62acf4fd475b%2Fload.png?1529178225522">
+  <p>
+    Putting the questions together....
+  </p>
+  </div>
+  
+  <form class="quiz animate-bottom" id="quiz3">
+  <label> Where was Stephen Curry born? </label> <br>
+  <input type="radio" name="state" value="ohio"> ohio <br>
+  <input type="radio" name="state" value="florida">florida <br>
+  <input type="radio" name="state" value="Texas"> Texas<br>
+  <input type="radio" name="state" value="California"> California <br>
+
+  
+
+  <label> How many MVPs has he won? </label> <br>
+  <input type="radio" name="Number" value="1"> 1 <br>
+  <input type="radio" name="Number" value="4"> 4 <br>
+  <input type="radio" name="Number" value="3"> 3 <br>
+  <input type="radio" name="Number" value="2"> 2 <br>
+
+  
+
+  <label> Which College did he go to? </label> <br>
+  <input type="radio" name="College" value="UCLA"> UCLA <br>
+  <input type="radio" name="College" value="USC">USC <br>
+  <input type="radio" name="College" value="Davidson"> Davidson <br>
+  <input type="radio" name="College" value="North Carolina"> North Carolina <br>
+
+  
+  <label> What's his father's name? </label> <br>
+  <input type="radio" name="Name" value="Dell"> Dell <br>
+  <input type="radio" name="Name" value="Andy"> Andy <br>
+  <input type="radio" name="Name" value="James"> James <br>
+  <input type="radio" name="Name" value="David"> David <br>
+  
+  <label> Has he been in a Burger King commercial? </label> <br>
+  <input type="radio" name="Response" value="Yes"> Yes <br>
+  <input type="radio" name="Response" value="No"> No <br>
+  <input class="submit" type="submit" value="Submit"> <br>
+         
+  </form>
+  <a href="index.html"><button class="stephquizbutton"> Go back to first page </button> </a>
+  	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+  <script src="loading.js"></script>
+  <script>
+  
+  $('#quiz3').submit(function() {
+    event.preventDefault()
+    var points = 0;
+    var $inputs = $('#quiz3 :input:radio:checked');
+    var values = {};
+    $inputs.each(function() {
+        values[this.name] = $(this).val();
+    });
+    if(values.state === "ohio") {
+      points++;
+    }
+    
+    if(values.Number === "2") {
+      points++;
+    }
+    
+    if(values.College === "Davidson") {
+      points++;
+    }
+    if(values.Name === "Dell") {
+      points++;
+    }
+    if(values.Response === "Yes") {
+      points++;
+    }
+    
+    $("#quiz3").css('visibility', 'hidden');
+    $(".stephquizbody").prepend("<h2>You got "+points+"/5 right!</h2>");
+    
+  });
+
+  </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
