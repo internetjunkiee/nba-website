@@ -1,0 +1,518 @@
+/* CSS files add styling rules to your content */
+body {
+height:100%;
+background-color:grey;
+}
+
+.bodypage1 {
+	font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+	margin: 2em;
+	background: url(http://htdevesign.com/wp-content/uploads/basketball/basketball-Basketball-Hoop-Wallpaper-full-hd-wallpaper-and-background-image-x-id-rhwallalphacoderscom-hoop-a-ball-sport-wallpaperrhsuperiorwallpaperscom-basketball-Basketball-Hoop.jpg) no-repeat center center fixed;
+	/*background-url: url(http://htdevesign.com/wp-content/uploads/basketball/basketball-Basketball-Hoop-Wallpaper-full-hd-wallpaper-and-background-image-x-id-rhwallalphacoderscom-hoop-a-ball-sport-wallpaperrhsuperiorwallpaperscom-basketball-Basketball-Hoop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;*/
+	text-align: right;
+}
+.player-table {
+	text-align: center;
+}
+h1 {
+	font-style: italic;
+	color: #373fff;
+}
+table {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: gray;
+	margin: auto;
+}
+img {
+	max-height: 350px;
+	max-width: 350px;
+}
+th {
+	text-align: left;
+}
+#clickPlayer {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+.page0-subtext {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 25px;
+	font-weight: 700;
+}
+/* Steph stuff */
+
+#scpage1 {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 40px;
+	font-weight: 900;
+	color: white;
+}
+.stephpage1 table {
+	border: 3px solid yellow;
+}
+.stephpage1 th {
+	border: 1px solid yellow;
+	color: white;
+}
+.stephpage1 td {
+	border: 1px solid yellow;
+	font-size: 15px;
+	color: white;
+}
+.bio {
+	font-family: 'Muli', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+.stephbody {
+	background: url("https://media.giphy.com/media/7zrQ7wu4HIR3y/giphy.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 115%;
+}
+.stephpage1 table {
+	text-align: center;
+	border: 1px solid yellow;
+}
+.stephpage1 th {
+	border: 1px solid yellow;
+}
+.stephpage td {
+	border: 1px solid yellow;
+}
+.buttonsteph {
+	-webkit-transition-duration: 0.4s;
+	/* Safari */
+	transition-duration: 0.4s;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+}
+.buttonsteph:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: yellow;
+	color: black;
+}
+/* Kevin durant*/
+
+.kdpage1player-table {
+	text-align: center;
+}
+.kdpage1 {
+	text-align: center;
+}
+.kdpage1 table {
+	margin: auto;
+	border: 1px solid blue;
+}
+.kdpage1 th {
+	border: 1px solid blue;
+	font-family: 'Muli', sans-serif;
+	color: black;
+	text-shadow: 1px 1px #a9a9a9;
+}
+.kdpage1 td {
+	border: 1px solid blue;
+	font-family: 'Muli', sans-serif;
+	color: black;
+	text-shadow: 1px 1px #a9a9a9;
+}
+
+.kdheader {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+.kdbio {
+	font-family: 'Muli', sans-serif;
+	font-size: 22px;
+	color: black;
+	text-shadow: 1px 1px #a9a9a9;
+}
+.kdbody {
+	background: url(https://i.ytimg.com/vi/COmPpH8e9Y0/maxresdefault.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 140%;
+}
+.buttonkd {
+	-webkit-transition-duration: 0.4s;
+	/* Safari */
+	transition-duration: 0.4s;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+}
+.buttonkd:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: blue;
+	color: black;
+}
+/* lebron JAmes*/
+
+#lj{
+  font-family: 'Shadows Into Light', cursive;
+		font-size: 40px;
+		color: black;
+    font-weight: bold;
+}
+.ljpage1 {
+	text-align: center;
+}
+
+.ljpage1 table {
+	margin: auto;
+	border: 1px solid red;
+	font-weight: 900;
+}
+.ljpage1 th {
+	border: 1px solid red;
+  font-family: 'Muli', sans-serif;
+	color: black;
+	text-shadow: 1px 1px #a9a9a9;
+}
+.ljpage1 td {
+	border: 1px solid red;
+  font-family: 'Muli', sans-serif;
+	color: black;
+	text-shadow: 1px 1px #a9a9a9;
+}
+.buttonlj {
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+}
+.buttonlj:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: red;
+	color: black;
+}
+.ljbio {
+		font-family: 'Muli', sans-serif;
+		font-size: 22px;
+		color: black;
+		text-shadow: 1px 1px #a9a9a9;
+  }
+	.ljbody {
+	background: url("https://media.giphy.com/media/xTiTnnF8tWIz6hz4B2/giphy.gif");
+  background-position: center;
+	background-repeat: no-repeat;
+	background-size: 139%
+	}
+	/* Gordon time!*/
+  .ghpage1player-table{
+  text-align: center;
+  }
+	.ghpage1 table {
+		border: 1px solid green;
+	}
+	.ghpage1 th {
+		border: 1px solid green;
+	}
+	.ghpage1 td {
+		border: 1px solid green;
+	}
+
+.ghbody{
+background: url(http://www.bostonherald.com/sites/default/files/styles/gallery/public/media/2017/07/03/070417hayward4.jpg?itok=mTq3p8AU);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 140%
+}
+.ghbio{
+font-family: 'Muli', sans-serif;
+font-size: 22px;
+color: black;
+text-shadow: 1px 1px #a9a9a9;
+}
+
+.buttongh{
+-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+}
+.buttongh:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: green;
+	color: black;
+}
+
+.submit {
+   -webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+}
+
+.submit:hover{
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: yellow;
+	color: black;
+}
+
+.stephquizbody{
+text-align: center;
+font-size: 22px;
+background: url("http://www.prosportsbackgrounds.com/assets/golden_state_warriors_2017_hardwood_wallpaper_pc_1.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: 150%
+}
+
+.ghquizbody{
+text-align: center;
+font-size: 22px;
+background: url("http://www.prosportsbackgrounds.com/assets/boston_celtics_2017_hardwood_wallpaper_pc_2.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: 150%
+
+}
+
+.kdquizbody{
+text-align: center;
+font-size: 22px;
+background: url("http://www.prosportsbackgrounds.com/assets/golden_state_warriors_2017_hardwood_wallpaper_pc_1.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: 150%
+}
+
+.ljquizbody{
+text-align: center;
+font-size: 22px;
+background: url("http://www.prosportsbackgrounds.com/assets/cleveland_cavaliers_2017_hardwood_wallpaper_pc_2.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: 150%
+}
+
+.kdsubmit{
+   -webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+
+}
+.kdsubmit:hover{
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: yellow;
+	color: black;
+}
+
+.ghsubmit{
+   -webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+
+}
+.ghsubmit:hover{
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: green;
+	color: black;
+}
+
+.loading {
+  position: absolute;
+    left: 40%;
+    top: 40%;
+  color:white;
+}
+
+.loader {
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear infinite;
+    
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+.quiz {
+  opacity:0;
+  text-align: center;
+  color:white;
+  margin-top: 30px;
+}
+
+
+.ljsubmit {
+   -webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+}
+
+.ljsubmit:hover{
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: red;
+	color: black;
+}
+
+ .ljquizbutton{
+-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+   position: relative;
+  bottom: -160px;
+  left: 600px;
+   
+}
+
+
+
+.ljquizbutton:hover{
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: red;
+	color: black;
+}
+
+ .stephquizbutton{
+-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+   position: relative;
+  bottom: -90px;
+  left: 600px;
+   
+}
+
+
+
+.stephquizbutton:hover{
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: yellow;
+	color: black;
+}
+
+.kdquizbutton{
+-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+  position: relative;
+  bottom: -25px;
+  left: 590px;
+   
+}
+
+
+
+.kdquizbutton:hover{
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: yellow;
+	color: black;
+}
+
+.ghquizbutton{
+-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	color: black;
+   position: relative;
+  bottom: -160px;
+  left: 600px;
+   
+}
+
+
+
+.ghquizbutton:hover{
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 1), 0 17px 50px 0 rgba(0, 0, 0, 1);
+	background-color: green;
+	color: black;
+}
+
